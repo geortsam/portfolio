@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body id="Home">
+    
+    <header>
+        <a href="#" class ="logo">George Tsamoglou</a>
+        
+        <nav> 
+            <a href="#Home" class ="active">Home</a>
+            <a href="#About" >About </a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+
+        </nav>
+</header>
+<div class="content">
+<div class="text">
+<h2>Hi, I am George Tsamoglou from Greece!</h2>   
+<p>I am currenlty a Uni-Student at the International Hellenic University (IHU) in Thessaloniki,GR. My main goal it to turn ideas into clean and functional code. Welcome to my journey! </p> 
+</div>
+<img src="Photos/tsam.png" alt="me" width="250" height="300">
+</div>
+<h5>Let's build something together!</h5>
+
+<section id="About">
+    <h2>About Me</h2>
+    <p>I’m a 21-year-old student and an enthusiastic amateur coder with a growing skill set in HTML, CSS, JavaScript, SQL,  C, Java, and Python. I enjoy exploring how different technologies work together to bring ideas to life through functional and creative applications. My goal is to keep improving my coding abilities, deepen my understanding of software development, and eventually become great at building innovative and impactful applications that make a real difference. Down below some technologies that I'd like to work on in the future  are being swowcased. Feel free to contact me for any questions  or advise as I'm open to discuss and learn through it!</p>
+    <h2>Future Plans</h2>
+
+    <h4><i class="fa-solid fa-laptop-code" ></i> App-Developing </i></h4>
+  
+    <h4><i class="fa-brands fa-internet-explorer"></i> Web-Developing</i></h4>
+    
+    <h4><i class="fa-solid fa-robot"></i> Artificial Inteligence</h4>
+
+    <h4><i class="fa-solid fa-lock"></i> CyberSecurity</h4>
+</section>
+
+<section id="Projects">
+  <h2>Projects</h2>
+
+  <!-- NEW wrapper for a neat responsive grid -->
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="photos">
+        <img src="Photos/mp3.webp" alt="MP3 Player UI with playback controls" loading="lazy" decoding="async">
+      </div>
+      <h3>Mp3-Player</h3>
+      <p>A simple Mp3 player project that is fully functional for music listening. Every user can browse through the songs he has added to the application. It features the common buttons like pausing, continuing, as well as skipping songs. In addition, each track displays the artist and title. Built with Java, JavaFX and Scene Builder.</p>
+    </article>
+
+    <article class="project-card">
+      <div class="photos">
+        <img src="Photos/wheather.png" alt="Weather app showing conditions and temperature" loading="lazy" decoding="async">
+      </div>
+      <h3>Weather-App</h3>
+      <p>A great project and amazing tool to use. Type a city and see real-time weather with icon-display, temperature, wind speed and humidity. Fully functional and precise using an API. Built with HTML, CSS & JS.</p>
+    </article>
+
+    <article class="project-card">
+      <div class="photos">
+        <img src="Photos/calc.png" alt="Minimal calculator interface" loading="lazy" decoding="async">
+      </div>
+      <h3>Calculator</h3>
+      <p>My first ever project: A fully functional calculator for quick, accurate operations. Simple UI with numeric keypad and display. Built with HTML, CSS & JS.</p>
+    </article>
+  </div>
+
+  <h5>More projects coming soon... <i class="fa-solid fa-spinner"></i></h5>
+</section>
+
+<section id="Contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <p>I’d love to hear from you! Get in touch using the form below or give me a call directly.</p>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> <a href="tel:+306983378050">+30 698 337 8050</a></p>
+      <p><strong>Email:</strong> <a href="mailto:georgetsam147@gmail.com">georgetsam147@gmail.com</a></p>
+
+      <!-- FIXED: equals sign on class; improved structure + icons -->
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/georgetsam-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/giorgos.tsamoglou/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <p><strong>Address:</strong> Thessaloniki, Greece</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+    
+</body>
+</html>

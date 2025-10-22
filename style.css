@@ -1,0 +1,316 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  min-width: 380px;
+  background-color: #F5F7FA;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    background-color:  #0078ff;
+
+}
+header nav{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    gap: 12px;;
+}
+
+header nav a{
+    text-decoration: none;
+     color: white;
+    font-size: 23px;
+    font-weight: 500;
+    
+}
+
+header .logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-decoration:solid;
+    font-style: italic;
+}
+
+img{
+    margin-top: 40px;
+    border-radius: 50%;
+    background-image: cover;
+
+}
+.content{
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+.text{
+    padding: 20px;
+    text-align: left;
+    font-size: 21px;
+    line-height: 1.6;
+    
+   
+}
+h5{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#About h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#About{
+    background-color: #0078ff;
+    padding: 20px;
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    font-size: 21px;
+    text-align: center;
+}
+#About h2{
+    text-shadow: 1px 1px 2px black;
+}
+
+#About h4{
+    padding: 16px;
+    margin-top: 20px;
+    background-color: #1E3A8A;
+    border-radius: 15px;
+    width:60%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px black;
+}
+#About h4:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+#Projects h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* ---- Projects layout & cards ---- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+ 
+}
+
+.project-card {
+  border-radius: 14px;
+  background-color: #0078ff;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+  padding-bottom: 0.85rem;     /* room for text spacing */
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.12);
+  background-color: #0b44e2;
+}
+
+.project-card h3 {
+  margin: 0.8rem 0 0.35rem;
+  padding: 0 1rem;
+  font-size: 1.05rem;
+}
+
+.project-card p {
+  padding: 0 1rem;
+  color: #020202; /* slate-600 */
+  line-height: 1.55;
+}
+
+/* Image container: perfect fit */
+.project-card .photos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  aspect-ratio: 16/10;  
+  overflow: hidden;
+  background: rgb(8, 8, 8); 
+}
+
+.project-card .photos img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  object-fit: fill;       /*img fit or cover*/
+  display: block;
+  transform: scale(1.002);
+  transition: transform .35s ease;
+  margin: 0;
+}
+
+.project-card:hover .photos img {
+  transform: scale(1.04);
+}
+
+/* ---- Contact: socials ---- */
+#Contact {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#0078ff;
+}
+
+.contact-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 200%;
+}
+
+.contact-container h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #0078ff;
+}
+
+.contact-container p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-bottom: 25px;
+}
+
+.contact-info a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0078ff;
+}
+
+.contact-form button {
+  background: #0078ff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #005ecc;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.socials li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #0f172a; /* slate-900 */
+  transition: background-color .2s ease, border-color .2s ease, transform .15s ease;
+}
+
+.socials li a:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
+}
+
+.socials i {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* (Optional) Make contact form tidy on narrow screens */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 680px;
+  margin: 0.35rem 0;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.contact-form button {
+  margin-top: 0.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #1e3a8a; 
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  filter: brightness(1.06);
+}
