@@ -59,8 +59,11 @@ img{
 .content{
     margin-top: 60px;
     padding: 20px;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
 }
 .text{
     padding: 20px;
@@ -130,7 +133,7 @@ h5{
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem;
   margin-top: 0.75rem;
- 
+  padding: 0 1rem;
 }
 
 .project-card {
@@ -320,33 +323,16 @@ h5{
 
 
 /* Make layout mobile-friendly */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-  header nav {
-    flex-wrap: wrap;
+@media (max-width: 680px){
+    .content{
+    display: flex;
     justify-content: center;
-  }
-
-  .content {
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
+    flex-direction: column-reverse;
+ }
 
-  .text {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .contact-container {
-    width: 100%;
-    max-width: 90%;
-  }
+ header{
+    flex-direction: column;
+    gap: 12px;
+ }
 }
