@@ -356,8 +356,12 @@ h5{
   header nav {
     width: 100%;
     min-width: 320px;
+  }
+
+  header nav a{
     font-size: 18px;
   }
 
 }
+
 
