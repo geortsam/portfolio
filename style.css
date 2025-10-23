@@ -354,8 +354,10 @@ h5{
 
 @media (min-width: 680px) {
   header nav {
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    font-size: 18px;
   }
 
 }
+
