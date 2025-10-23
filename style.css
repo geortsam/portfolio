@@ -11,7 +11,7 @@ html {
 
 body {
   max-width: 100%;
-  min-width: 380px;
+  min-width: 320px;
   background-color: #F5F7FA;
 }
 header {
@@ -28,19 +28,20 @@ header nav{
     display: flex;
    justify-content: space-between;
     align-items: center;
+    text-align: center;
     gap: 12px;;
 }
 
 header nav a{
     text-decoration: none;
      color: white;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 500;
     
 }
 
 header .logo{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     color: white;
     text-decoration:solid;
@@ -50,6 +51,8 @@ header .logo{
 img{
     margin-top: 40px;
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
     background-image: cover;
 
 }
@@ -197,7 +200,7 @@ h5{
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 40px;
   max-width: 600px;
-  width: 200%;
+  width: 100%;
 }
 
 .contact-container h2 {
@@ -313,4 +316,37 @@ h5{
 
 .contact-form button:hover {
   filter: brightness(1.06);
+}
+
+
+/* Make layout mobile-friendly */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 90%;
+  }
 }
