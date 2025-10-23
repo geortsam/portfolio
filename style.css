@@ -320,7 +320,7 @@ h5{
 
 
 /* Make layout mobile-friendly */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -349,4 +349,13 @@ h5{
     width: 100%;
     max-width: 90%;
   }
+
+}
+
+@media (min-width: 680px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
